@@ -1,0 +1,15 @@
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\TugasFundamental_Allysa.csproj.AssemblyReference.cache
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\TugasFundamental_Allysa.GeneratedMSBuildEditorConfig.editorconfig
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\TugasFundamental_Allysa.AssemblyInfoInputs.cache
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\TugasFundamental_Allysa.AssemblyInfo.cs
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\TugasFundamental_Allysa.csproj.CoreCompileInputs.cache
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\bin\Debug\net6.0\TugasFundamental_Allysa.exe
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\bin\Debug\net6.0\TugasFundamental_Allysa.deps.json
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\bin\Debug\net6.0\TugasFundamental_Allysa.runtimeconfig.json
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\bin\Debug\net6.0\TugasFundamental_Allysa.dll
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\bin\Debug\net6.0\TugasFundamental_Allysa.pdb
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\TugasFundamental_Allysa.dll
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\refint\TugasFundamental_Allysa.dll
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\TugasFundamental_Allysa.pdb
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\TugasFundamental_Allysa.genruntimeconfig.cache
+D:\ALLYSA\Kerja\Metrodata Coding Camp\Codingan\TugasFundamental_Allysa\obj\Debug\net6.0\ref\TugasFundamental_Allysa.dll
