@@ -1,6 +1,4 @@
-﻿using System.Data.SqlTypes;
-
-namespace TugasFundamental
+﻿namespace TugasFundamental
 {
     class Program
     {
