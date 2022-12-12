@@ -54,60 +54,61 @@
             for (int i = 0; i < n; i++)
             {
                 Console.Write("Masukan NIM\t\t\t : ");
-                nim[i] = Console.ReadLine();
-                
-                if(n > 1)
+                string cek_nim = Console.ReadLine();
+                nim[i] = CekNim(cek_nim);
+                Console.Write("Masukan Nama\t\t\t : ");
+                nama[i] = Console.ReadLine();
+                do
                 {
-                    string[] input = { nim[i + 1] };
-                    string already;
-                    already = Array.Find(input, elemen => elemen == nim[i]);
-                    if (already != null)
+                    Console.Write("Masukan Nilai Ujian Sisipan 1\t : ");
+                    us1[i] = Convert.ToDouble(Console.ReadLine());
+                    if (us1[i] > 100)
                     {
-                        Console.WriteLine("NIM Sudah Ada. Mohon Input NIM yang Berbeda!");
+                        Console.WriteLine("Mohon Input Nilai 0 - 100!");
+                        Console.Clear();
                     }
-                }                
-                else
+                } while (us1[i] > 100);
+
+                do
                 {
-                    Console.Write("Masukan Nama\t\t\t : ");
-                    nama[i] = Console.ReadLine();
-                    do
+                    Console.Write("Masukan Nilai Ujian Sisipan 2\t : ");
+                    us2[i] = Convert.ToDouble(Console.ReadLine());
+                    if (us2[i] > 100)
                     {
-                        Console.Write("Masukan Nilai Ujian Sisipan 1\t : ");
-                        us1[i] = Convert.ToDouble(Console.ReadLine());
-                        if (us1[i] > 100)
-                        {
-                            Console.WriteLine("Mohon Input Nilai 0 - 100!");
-                            Console.Clear();
-                        }
-                    } while (us1[i] > 100);
+                        Console.WriteLine("Mohon Input Nilai 0 - 100!");
+                        Console.Clear();
+                    }
+                } while (us2[i] > 100);
 
-                    do
+                do
+                {
+                    Console.Write("Masukan Nilai UAS\t\t : ");
+                    uas[i] = Convert.ToDouble(Console.ReadLine());
+                    if (us2[i] > 100)
                     {
-                        Console.Write("Masukan Nilai Ujian Sisipan 2\t : ");
-                        us2[i] = Convert.ToDouble(Console.ReadLine());
-                        if (us2[i] > 100)
-                        {
-                            Console.WriteLine("Mohon Input Nilai 0 - 100!");
-                            Console.Clear();
-                        }
-                    } while (us2[i] > 100);
-
-                    do
-                    {
-                        Console.Write("Masukan Nilai UAS\t\t : ");
-                        uas[i] = Convert.ToDouble(Console.ReadLine());
-                        if (us2[i] > 100)
-                        {
-                            Console.WriteLine("Mohon Input Nilai 0 - 100!");
-                            Console.Clear();
-                        }
-                    } while (uas[i] > 100);
-
-                    Console.WriteLine("========================================================");
-                }
-               
+                        Console.WriteLine("Mohon Input Nilai 0 - 100!");
+                        Console.Clear();
+                    }
+                } while (uas[i] > 100);
+                Console.WriteLine("========================================================");
             }
+
         }
+
+        static string CekNim(string cek_nim)
+        {
+            string already = Array.Find(nim, element => element != null && element == cek_nim);
+            if (already != null)
+            {
+                Console.WriteLine("NIM Sudah Ada. Mohon Input NIM yang Berbeda!");
+                Console.ReadKey();
+                Console.Write("Masukan NIM\t\t\t : ");
+                cek_nim = Console.ReadLine();
+                CekNim(cek_nim);
+            }
+            return cek_nim;
+        }
+
 
         public static void LihatData()
         {
