@@ -1,4 +1,6 @@
-﻿namespace TugasFundamental
+﻿using System.Data.SqlTypes;
+
+namespace TugasFundamental
 {
     class Program
     {
@@ -40,6 +42,7 @@
 
         public static void IsiData()
         {
+            Console.Clear();
             Console.Write("Masukan Banyak Data\t : ");
             n = Convert.ToInt32(Console.ReadLine());
             nim = new string[n];
@@ -54,25 +57,17 @@
             {
                 Console.Write("Masukan NIM\t\t\t : ");
                 nim[i] = Console.ReadLine();
-                if (n > 1)
+                
+                if(n > 1)
                 {
-                    try
+                    string[] input = { nim[i + 1] };
+                    string already;
+                    already = Array.Find(input, elemen => elemen == nim[i]);
+                    if (already != null)
                     {
-                        Console.Write("Masukan NIM\t\t\t : ");
-                        nim[i] = Console.ReadLine();
-                        nim[i + 1] == nim[i];
+                        Console.WriteLine("NIM Sudah Ada. Mohon Input NIM yang Berbeda!");
                     }
-                    catch (Exception ex){
-                        Console.Write("Error info : " + ex.Message);
-                        
-                    }
-                    finally
-                    {
-                        Console.WriteLine("Mohon Input NIM yang Berbeda!");
-                        Console.Clear();
-                    }
-                          
-                }
+                }                
                 else
                 {
                     Console.Write("Masukan Nama\t\t\t : ");
